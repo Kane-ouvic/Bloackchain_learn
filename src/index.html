@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>HiSKIO Token - Wallet</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body style="background-color: black">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-push-2">
+          <h1 class="text-center" style="color: white">
+            <img
+              src="./logo.jpg"
+              alt="Girl in a jacket"
+              width="64"
+              height="64"
+            />
+            成大區塊鏈與金融科技社(範例)
+          </h1>
+          <hr />
+          <br />
+        </div>
+      </div>
+
+      <div id="petsRow" class="row">
+        <div class="col-sm-6 col-sm-push-3 col-md-4 col-md-push-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">我的錢包</h3>
+            </div>
+            <div class="panel-body">
+              <strong>餘額</strong>: <span id="HTBalance">NB</span><br /><br />
+
+              <h4>Transfer</h4>
+              <input
+                type="text"
+                class="form-control"
+                id="HTTransaferAddress"
+                placeholder="Address"
+              />
+              <input
+                type="text"
+                class="form-control"
+                id="TransferAmount"
+                placeholder="Amount"
+              />
+              <button
+                class="btn btn-primary"
+                id="transferButton"
+                type="button"
+                style="background-color: blue"
+              >
+                Transfer
+              </button>
+
+              <h4>Mint</h4>
+              <input
+                type="text"
+                class="form-control"
+                id="MintReceiverAddress"
+                placeholder="Address"
+              />
+              <input
+                type="text"
+                class="form-control"
+                id="MintReceiverAmount"
+                placeholder="Amount"
+              />
+              <button class="btn btn-primary" id="mintButton" type="button">
+                Mint
+              </button>
+
+              <h4>TransferFrom</h4>
+              <input
+                type="text"
+                class="form-control"
+                id="TransferFromAddress"
+                placeholder="Address"
+              />
+              <input
+                type="text"
+                class="form-control"
+                id="TransferToAddress"
+                placeholder="Address"
+              />
+              <input
+                type="text"
+                class="form-control"
+                id="TransferFromAmount"
+                placeholder="Amount"
+              />
+              <button
+                class="btn btn-primary"
+                id="transferFromButton"
+                type="button"
+                style="background-color: Red"
+              >
+                Transfer From
+              </button>
+
+              <h4>Approve</h4>
+              <input
+                type="text"
+                class="form-control"
+                id="ApproveAddress"
+                placeholder="Address"
+              />
+              <input
+                type="text"
+                class="form-control"
+                id="ApproveAmount"
+                placeholder="Amount"
+              />
+              <button
+                class="btn btn-primary"
+                id="approveButton"
+                type="button"
+                style="background-color: green"
+              >
+                Approve
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    cd
+    <script src="js/app.js"></script>
+  </body>
+</html>
